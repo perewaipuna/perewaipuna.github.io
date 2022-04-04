@@ -1,45 +1,80 @@
-<html>
+<html>  
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   
-<head>
   
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  
-</head>
+<style>
+.popup .popuptext {
+visibility: hidden;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 8px 0;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+margin-left: -80px;
+}
+.popup .show {
+visibility: visible;
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+from {opacity: 0;} 
+to {opacity: 1;}
+}
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity:1 ;}
+}
+</style>
  
   
+  
+</head>  
 <title>Perewaipuna</title>
-    
+<body>  
+<center>
+<img src="perewaipuna.png">
+...whakatoki : ... there is no try, only do
+<p>
+
+<div class="popup" onclick="myFunction()" ><button>Preview</button>
+<video class="popuptext" id="myPopup" style="width:800px;" >
+<source src="perewaipunavideo.mp4" type="video/mp4">
+</video>
+</div>
+<script>
+function myFunction() {
+var popup = document.getElementById("myPopup");
+popup.classList.toggle("show");
+
+if (popup.paused){ 
+    popup.play(); 
+    }
+  else{ 
+    popup.pause();
+    }
+ 
+}
+</script>
   
-<body>
+
   
-  <center>
-    <img src="perewaipuna.png">
-    <p>
-    whakatoki : ... there is no try, only do
-   <p><p>
-  </center>
+
+<a href="about.html"><img src="placeholder1a.png" width="200" height="200"></a>
+<a href="wananga.html"><img src="placeholder2a.png" width="200" height="200"></a>
+<a href="contact.html"><img src="placeholder3a.png" width="200" height="200"></a>
+<a href="resources.html"><img src="placeholder4a.jpg" width="200" height="200"></a>
+</center>
     
-    
-    <center>
-      
-      <a href="about.html"><img src="placeholder1a.png" width="200" height="200"></a>
-      
-      <a href="wananga.html"><img src="placeholder2a.png" width="200" height="200"></a>
-      
-      <a href="contact.html"><img src="placeholder3a.png" width="200" height="200"></a>
-      
-      <a href="resources.html"><img src="placeholder4a.jpg" width="200" height="200"></a>
-   </center>
-    
-    <BR>
+<p>
    
-   <p>WANANGA > WA PG (UPCOMING) > WA COMPLETED > INDIVIDUAL PAGES
-   <p>RESOURCES >> STUDENTS > google classroom
-   
-   
+WORKING ON...
+<p>WANANGA > WA PG (UPCOMING) > WA COMPLETED > INDIVIDUAL PAGES
+<p>RESOURCES >> STUDENTS > google classroom
 </body>
-
-
 </html>
